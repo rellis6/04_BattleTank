@@ -1,2 +1,2 @@
-# 04_BattleTank
-An open-world head to head tank fight with simple AI in unreal 4.
+# BattleTank
+An open-world head to head tank fight with simple AI in Unreal 4.
