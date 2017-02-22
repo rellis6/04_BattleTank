@@ -3,6 +3,10 @@
 
 *.VC.db
 
+# Starter Content
+BattleTank/Content/StarterContent/Textures/*
+BattleTank/Content/StarterContent/HDRI/*
+
 # Compiled Object files
 *.slo
 *.lo
