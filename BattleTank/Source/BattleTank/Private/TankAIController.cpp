@@ -7,7 +7,6 @@
 void ATankAIController::BeginPlay()
 {
 	Super::BeginPlay();
-	UE_LOG(LogTemp, Warning, TEXT("PlayerController Begin Play"));
 	GetControlledTank();
 
 	ATank *player = GetPlayerTank();
