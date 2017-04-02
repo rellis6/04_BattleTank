@@ -20,12 +20,18 @@ void ATankAIController::BeginPlay()
 
 }
 
+// Called every frame
+void ATankAIController::Tick(float DeltaTime)
+{
+	Super::Tick(DeltaTime);
+
+	if (GetPlayerTank()) {
+		GetControlledTank()->AimAt(GetPlayerTank()->GetActorLocation());
+	}
+}
+
 ATank* ATankAIController::GetControlledTank() const
 {
-	if (GetPawn() != nullptr) {
-		FString pawnName = GetPawn()->GetName();
-		UE_LOG(LogTemp, Warning, TEXT("Possed AI tank: %s"), *pawnName);
-	}
 	return Cast<ATank>(GetPawn());
 }
 
