@@ -2,6 +2,7 @@
 
 #pragma once
 
+#include "BattleTank.h"
 #include "AIController.h"
 #include "TankAIController.generated.h"
 
